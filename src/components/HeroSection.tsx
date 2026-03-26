@@ -56,12 +56,18 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
-          <a href="#projects" className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:shadow-[0_0_30px_hsl(var(--primary)/0.4)] transition-all duration-300">
+          <button 
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:shadow-[0_0_30px_hsl(var(--primary)/0.4)] transition-all duration-300"
+          >
             View Projects
-          </a>
-          <a href="#contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-primary/40 text-primary hover:bg-primary/10 transition-all duration-300">
+          </button>
+          <button 
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-primary/40 text-primary hover:bg-primary/10 transition-all duration-300"
+          >
             <Mail size={18} /> Contact Me
-          </a>
+          </button>
           <a href="https://drive.google.com/file/d/1stv8NeSwDMi85o6zfqRvqdL2HUl3msOB/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-border text-muted-foreground hover:border-primary/40 hover:text-primary transition-all duration-300">
             <FileText size={18} /> Resume
           </a>
