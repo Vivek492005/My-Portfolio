@@ -24,7 +24,7 @@ const AboutSection = () => (
             I'm a Computer Science Engineering student specialized in <span className="text-foreground font-medium">Artificial Intelligence and Machine Learning</span> at <span className="text-primary">Graphic Era Hill University</span> (Batch of 2027). With a current CGPA of <span className="text-foreground font-semibold">8.12</span>, I am dedicated to bridging the gap between complex AI research and practical, impactful applications.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            My work focuses on building intelligent systems that solve real-world challenges. From developing <span className="text-primary">Saarthi – OS</span>, an AI-powered assistive system for speech-disabled users, to innovating in agriculture with <span className="text-primary">AgroSense</span>, I strive to create technology that makes a difference.
+            My work focuses on building intelligent systems that solve real-world challenges. From developing <span className="text-primary">CompileFlow</span>, an interactive compiler pipeline visualizer, to innovating in anomaly detection with <span className="text-primary">TopoForge</span>, I strive to create technology that makes a difference.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             I am a continuous learner, constantly exploring Generative AI, Cloud Computing, and scalable full-stack architectures. I'm always looking for opportunities to collaborate on innovative projects and contribute to the tech community.

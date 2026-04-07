@@ -1,33 +1,36 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Cpu, FileSearch, Mic } from "lucide-react";
+import { ExternalLink, Github, Terminal, Sparkles, Activity } from "lucide-react";
 import { useState } from "react";
 
 const projects = [
   {
-    icon: Cpu,
-    title: "Saarthi – OS 🗣️",
-    description: "An AI-powered assistive system combining real-time hand-gesture recognition with a smart voice assistant to enhance accessibility for speech-disabled users.",
-    tech: ["AI", "Hand-Gesture Recognition", "NLP", "Python"],
-    features: ["Real-time gesture-to-speech", "Multilingual TTS support", "Smart voice commands", "Accessibility focused"],
-    github: "https://github.com/Vivek492005",
+    icon: Terminal,
+    title: "CompileFlow ⚡",
+    description: "An interactive multi-language compiler pipeline visualizer that demonstrates lexical analysis, parsing, and Intel x86 code generation.",
+    tech: ["React", "TypeScript", "Compiler Design", "Intel x86"],
+    features: ["Multi-language support (C++, Python)", "Real-time AST visualization", "Intel x86 code generation", "Interactive token stream"],
+    github: "https://github.com/Vivek492005/CompileFlow-An-Interactive-Multi-Language-Compiler-Pipeline-Visualizer-with-Intel-Code-Generation",
+    demo: "https://vivek492005.github.io/CompileFlow-An-Interactive-Multi-Language-Compiler-Pipeline-Visualizer-with-Intel-Code-Generation/",
     color: "from-primary to-neon-blue",
   },
   {
-    icon: FileSearch,
-    title: "AgroSense AI 🌾",
-    description: "An AI-driven farming platform for hilly regions integrating soil health analysis, 3D visualization, and crop recommendations to optimize productivity.",
-    tech: ["Machine Learning", "Data Analytics", "3D Visualization", "Blockchain"],
-    features: ["Soil health prediction", "3D land visualization", "Crop recommendation engine", "AR plantation guidance"],
-    github: "https://github.com/Vivek492005",
+    icon: Sparkles,
+    title: "AI Career Assistant 🚀",
+    description: "A comprehensive platform for resume analysis, job recommendations, and research paper intelligence using advanced NLP.",
+    tech: ["NLP", "Generative AI", "Python", "React"],
+    features: ["Resume-match scoring", "Job recommendation engine", "Research paper deconstructor", "PDF generation"],
+    github: "https://github.com/Vivek492005/AI-Career-Research-Assistant-Resume-Analysis-Job-Recommendation-Research-Paper-Intelligence-Platform",
+    demo: "https://vivek492005.github.io/AI-Career-Research-Assistant-Resume-Analysis-Job-Recommendation-Research-Paper-Intelligence-Platform/",
     color: "from-neon-purple to-primary",
   },
   {
-    icon: Mic,
-    title: "AI Resume Analyzer 🤖",
-    description: "An intelligent resume parsing and job recommendation system that uses ML to analyze resumes, score them, and match candidates with relevant opportunities.",
-    tech: ["Python", "NLP", "Machine Learning", "React"],
-    features: ["Resume parsing & analysis", "Job matching algorithm", "Smart scoring system", "Skill gap suggestions"],
-    github: "https://github.com/Vivek492005",
+    icon: Activity,
+    title: "TopoForge 💠",
+    description: "A real-time anomaly detection platform using Topological Data Analysis (TDA) to identify patterns in complex network traffic.",
+    tech: ["TDA", "Machine Learning", "Python", "Dashboard"],
+    features: ["Persistent homology visualization", "Real-time network monitoring", "Anomaly scoring system", "Interactive 3D manifolds"],
+    github: "https://github.com/Vivek492005/TopoForge---Real-time-Anomaly-Detection-Platform-using-Topological-Data-Analysis-TDA-",
+    demo: "https://vivek492005.github.io/TopoForge---Real-time-Anomaly-Detection-Platform-using-Topological-Data-Analysis-TDA-/",
     color: "from-neon-blue to-neon-purple",
   },
 ];
@@ -95,11 +98,21 @@ const ProjectsSection = () => {
                   ))}
                 </ul>
 
-                <div className="flex gap-3">
-                  <a href={project.github} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors">
+                <div className="flex gap-4 mt-auto pt-4 border-t border-border/40">
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                  >
                     <Github size={16} /> Code
                   </a>
-                  <a href="#" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a 
+                    href={project.demo} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                  >
                     <ExternalLink size={16} /> Demo
                   </a>
                 </div>
